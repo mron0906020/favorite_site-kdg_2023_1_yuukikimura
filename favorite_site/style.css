@@ -1,0 +1,171 @@
+img {
+    max-width: 100%;
+}
+
+/* ヘッダー */
+.header {
+    height: 100vh;
+    background-image: url("./image1.png");
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+.header-top {
+   height: 80px;
+   background-color: #165F00;
+}
+.title{
+    color: #fff;
+    padding-top: 20px;
+}
+
+.btn-burger {
+    display: block;
+    width: 56px;
+    height: 60px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    
+}
+
+/*ハンバーガーアイコンを作る三本線*/
+.icon,
+.icon:before,
+.icon:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    /*線の太さ*/
+    width: 35px;
+    /*線の長さ*/
+    background-color: #FFF;
+    border-radius: 2px;
+    display: block;
+    content: '';
+    cursor: pointer;
+    margin: auto;
+    
+}
+
+/*三本線の間隔*/
+.icon:before {
+    top: 15px;
+    bottom: auto;
+    
+}
+
+.icon:after {
+    top: -15px;
+    bottom: auto;
+}
+
+/*チェックボックス非表示*/
+.nav-toggle {
+    display: none;
+}
+
+/*アイコンをクリックしたら*/
+.nav-toggle:checked~.btn-burger .icon {
+    background: transparent;
+}
+
+.nav-toggle:checked~.btn-burger .icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.nav-toggle:checked~.btn-burger .icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.icon,
+    .icon:before,
+    .icon:after {
+        transition: all .8s;
+    }
+
+.countainer-catchcopy{
+    margin: 0 0 0 auto;
+    height: calc((100vh - 80px)*.6);
+    width: 700px;
+    background-color: #DAFFBF;
+    color: #07950C;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.countainer-introduction{
+    margin: 0 0 0 auto;
+    height: calc((100vh - 80px)*.4);
+    width: 700px;
+    background-color: #fff;
+    color: #07950C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+}
+
+.introduction-text{
+    color: #07950C;
+}
+
+
+/* 地域選択 */
+
+.countainer-region{
+    background-color: #8FB177;
+    height: auto;
+}
+
+.region-flex{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    
+}
+
+.region-text{
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    padding: 40px 0 50px 0;
+}
+
+.button{
+    text-decoration: none;
+    color: #165F00;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    transition: all .5s;
+    width: 400px;
+    margin: 40px auto;
+    border: #444 1px solid;
+    text-align: center;
+    font-size: 50px;
+}
+
+.button:hover{
+    background-color:#165F00;
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    padding-top: 20px;
+    height: 70px;
+    text-align: center;
+    background-color:#165F00;
+    color: #fff;
+    font-size: 20px;
+
+}
+
